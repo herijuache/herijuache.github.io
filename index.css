@@ -41,7 +41,7 @@ h1 {
     /* animation */
     animation-name: beat;
     animation-duration: 1s;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
 }
 
 .heart::before {
@@ -70,10 +70,21 @@ h1 {
 
 img {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 50%;
-    bottom: 50%;
+    width: 60%;
+    max-width: 400px;
+    max-height: 450px;
+    min-width: 200px;
+    min-height: 250px;
+    height: 60%;
+    top: 40%;
+    bottom: 60%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        z-index: -1;
+    }
 }
 
 /* Let's add some animation to the heart */
