@@ -83,8 +83,19 @@ img {
 
 @media only screen and (max-width: 600px) {
     img {
+        display: flex;
+        justify-content: center;
         z-index: -1;
     }
+
+    h1 {
+        font-size: 5.0rem;
+    }
+    
+    .answer-group {
+        font-size: 3.5rem;
+    }
+
 }
 
 /* Let's add some animation to the heart */
@@ -130,4 +141,3 @@ img {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 } */
-
