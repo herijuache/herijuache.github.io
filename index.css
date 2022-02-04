@@ -2,6 +2,7 @@
 
 body {
     text-align: center;
+    background-color: pink;
     font-family: cursive;
     font-size: 16px;
     display: flex;
@@ -100,7 +101,7 @@ img {
 
     img {
         display: flex;
-        z-index: ;
+        z-index: -1;
         top: 40%;
         left: -10%;
     }
