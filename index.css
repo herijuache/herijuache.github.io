@@ -1,176 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+html {
+    background: url(assets/images/monitor.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
     text-align: center;
-    background-color: pink;
-    font-family: cursive;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-/* body::before {
-    content: "";
-    background-image: url(https://images.unsplash.com/photo-1517856713891-215e57a13c0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
-    background-repeat: no-repeat;
-    position: absolute;
-    background-position: center;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.15;
-} */
-
-h1, .answer-group, .ily {
-    font-family: 'Oooh Baby', cursive;
-    font-weight: bolder;
+.intro {
+    font-size: xx-large;
+    font-weight: normal;
+    animation: fadeIn 5s;
 }
 
-h1 {
-    font-size: 3.5rem;
+#name {
+    animation-duration: 8s;
 }
 
-.valentine {
-    margin-bottom: 0;
+#hobbies {
+    animation-duration: 11s;
 }
 
-.answer-group {
-    margin-top: 0;
-    font-size: 1.5rem;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
-
-/* The following is to create the heart */
-
-.heart {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    margin: 5rem;
-    transform: rotate(-45deg);
-    /* animation */
-    animation-name: beat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-.heart::before {
-    content: "";
-    background-color: red;
-    position: absolute;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    left: 0rem;
-    top: -6rem;
-}
-
-.heart::after {
-    content: "";
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-.answer-group:hover {
-    transform: scale(1.15);
-}
-
-img {
-    position: absolute;
-    width: 60%;
-    max-width: 400px;
-    max-height: 450px;
-    min-width: 200px;
-    min-height: 250px;
-    height: 60%;
-    top: 40%;
-    bottom: 60%;
-    object-fit: cover;
-}
-
-@media only screen and (max-width: 800px) {
-
-    body {
-        background-color: pink;
-    }
-
-    img {
-        display: flex;
-        z-index: -1;
-        top: 40%;
-        left: -10%;
-    }
-
-    h1 {
-        font-size: 3.0rem;
-    }
-    
-    .answer-group { 
-        font-size: 2.0.rem;
-    }
-
-    .heart {
-        width: 100px;
-        height: 100px;
-    }
-
-    .heart::before {
-        width: 100px;
-        height: 100px;
-        top: -3rem;
-    }
-    .heart::after {
-        width: 100px;
-        height: 100px;
-    }
-
-}
-
-/* Let's add some animation to the heart */
-
-@keyframes beat {
-    0% {
-        transform: scale(1) rotate(-45deg);
-    }
-    50% {
-        transform: scale(0.6) rotate(-45deg);
-    }
-}
-
-/* .intro {
-    font-family: "Courier New", Courier, monospace;
-    color: #000;
-    font-size: 150%;
-    font-weight: bold;
-}
-
-.name {
-    color: #000;
-    font-size: 250%;
-}
-
-
-@keyframes slidein {
-    from {
-        margin-left: 50%;
-    }
-
-    to {
-        margin-left: -50%;
-    }
-}
-
-.construction {
-	height: auto;
-	width: 500px;
-    border-color: white;
-    animation-duration: 5s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-} */
